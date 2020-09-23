@@ -4,11 +4,8 @@ public class ArgConverter {
 
   public static void main(String[] args) {
     double celsius = Double.parseDouble(args[0]);
-    double fahrenheit = celsiusToFahrenheit(celsius);
+    double fahrenheit = InputConverter.celsiusToFahrenheit(celsius);
     System.out.println(fahrenheit);
   }
 
-  private static double celsiusToFahrenheit(double celsius) {
-    return celsius * 9 / 5 + 32;
-  }
 }
